@@ -157,17 +157,22 @@
     }
 
     .card h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.5px; }
-    .card-desc { font-size: 0.95rem; color: var(--ink-2); flex-grow: 1; }
+    
+    /* Styled lists for bulleted instructions */
+    .card-desc { font-size: 0.92rem; color: var(--ink-2); flex-grow: 1; }
+    .card-desc ul { list-style: none; padding: 0; }
+    .card-desc li { position: relative; padding-left: 1.25rem; margin-bottom: 0.35rem; }
+    .card-desc li::before { content: "•"; color: var(--orange); position: absolute; left: 0; font-weight: bold; }
 
     .card-link {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       font-family: var(--font-display); font-size: 0.9rem; font-weight: 700;
-      color: var(--ink); background: var(--off-white); text-decoration: none;
-      border: 1px solid var(--border); border-radius: 10px; padding: 10px 16px;
+      color: var(--white); background: var(--orange); text-decoration: none;
+      border: 1px solid var(--orange); border-radius: 10px; padding: 10px 16px;
       transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.5px;
     }
 
-    .card-link:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
+    .card-link:hover { background: var(--orange-dk); border-color: var(--orange-dk); }
     .card-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
     .card-link:hover svg { transform: translateX(3px); }
 
@@ -271,7 +276,14 @@
         <div class="card-icon">👁</div>
         <h3>CoinPayU</h3>
       </div>
-      <p class="card-desc">Watch short ads and earn Bitcoin per view. Each ad deposits satoshis directly to your balance. Simple, clean, and consistent.</p>
+      <div class="card-desc">
+        <ul>
+          <li>View surf, window, and interactive video ads</li>
+          <li>Claim rewards from hourly multi-coin faucets</li>
+          <li>Complete high-paying market offerwalls</li>
+          <li>Withdraw directly to your personal crypto wallet</li>
+        </ul>
+      </div>
       <a href="https://www.coinpayu.com/?r=2rc24RZsS9W7" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -282,7 +294,14 @@
         <div class="card-icon">🎮</div>
         <h3>RollerCoin</h3>
       </div>
-      <p class="card-desc">Play arcade mini-games to build virtual hashrate. Use that power to passively mine real BTC, ETH, and DOGE in the background.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Play fast-paced retro arcade mini-games</li>
+          <li>Build up your profile's virtual hash power</li>
+          <li>Allocate mining power to BTC, ETH, or DOGE</li>
+          <li>Accumulate passive block rewards around the clock</li>
+        </ul>
+      </div>
       <a href="https://rollercoin.com/?r=mqap38fq" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -293,7 +312,14 @@
         <div class="card-icon">🪙</div>
         <h3>Cointiply</h3>
       </div>
-      <p class="card-desc">One of the highest-paying Bitcoin reward sites. Complete surveys, watch videos, and roll the daily faucet to stack coins.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Roll the free multiplier faucet every day</li>
+          <li>Complete high-yield research surveys and tasks</li>
+          <li>Watch promo videos and click structured PTC ads</li>
+          <li>Earn a 5% loyalty bonus for logging in daily</li>
+        </ul>
+      </div>
       <a href="http://cointiply.com/r/0DOBk" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -304,7 +330,14 @@
         <div class="card-icon">🔥</div>
         <h3>FireFaucet</h3>
       </div>
-      <p class="card-desc">An advanced auto-faucet. Earn Autoclaim Points from tasks, then let the system automatically convert them to crypto around the clock.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Solve shortlinks, view ads, and finish tasks</li>
+          <li>Accumulate native Auto Claim Points (ACP)</li>
+          <li>Run the automated multi-coin faucet engine</li>
+          <li>Convert points directly to top tier altcoins</li>
+        </ul>
+      </div>
       <a href="https://firefaucet.win/ref/686986" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -315,7 +348,14 @@
         <div class="card-icon">💳</div>
         <h3>FaucetPay</h3>
       </div>
-      <p class="card-desc">The essential micro-wallet. Consolidate tiny payouts from dozens of connected faucets into one central, secure balance.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Setup a secure micropayment wallet profile</li>
+          <li>Receive tiny satoshi payouts with zero friction</li>
+          <li>Play low-risk games or swap coins instantly</li>
+          <li>Consolidate and cash out to main custody wallets</li>
+        </ul>
+      </div>
       <a href="https://faucetpay.io/?r=1671724" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -326,7 +366,14 @@
         <div class="card-icon">💵</div>
         <h3>FreeCash</h3>
       </div>
-      <p class="card-desc">Complete app installs and game offers to earn coins. Instantly redeemable for Bitcoin, Litecoin, or fiat options like PayPal.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Test mobile applications and download popular games</li>
+          <li>Answer verified consumer opinion surveys</li>
+          <li>Earn platform coins for every completed milestone</li>
+          <li>Redeem instantly for Bitcoin, Litecoin, or gift cards</li>
+        </ul>
+      </div>
       <a href="https://freecash.com/r/9bitcoin" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -337,7 +384,14 @@
         <div class="card-icon">🚿</div>
         <h3>FaucetCrypto</h3>
       </div>
-      <p class="card-desc">Claim from a multi-coin faucet every few hours. Level up your profile to permanently increase your earning multipliers.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Claim free dashboard coins every 20 minutes</li>
+          <li>Browse short link advertisements and custom PTC walls</li>
+          <li>Level up your account to scale reward multipliers</li>
+          <li>Withdraw directly to over 20 supported assets</li>
+        </ul>
+      </div>
       <a href="https://faucetcrypto.com/r/9014628" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -348,7 +402,14 @@
         <div class="card-icon">🎲</div>
         <h3>NanoGames</h3>
       </div>
-      <p class="card-desc">A premium crypto gaming platform that gives you free daily bonus rolls just for logging in. Win instant crypto rewards.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Log in every day for a free progressive lucky spin</li>
+          <li>Win platform tokens or top-cap ecosystem coins</li>
+          <li>Participate in community chat-room crypto rain drops</li>
+          <li>Play completely provably fair mini-games</li>
+        </ul>
+      </div>
       <a href="https://nanogames.io/i-bonusrolls-n/" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -359,7 +420,14 @@
         <div class="card-icon">⚙️</div>
         <h3>DutchyCorp</h3>
       </div>
-      <p class="card-desc">A powerhouse auto-faucet supporting over 50 coins. Set your preferred assets and let it drip directly to your wallet.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Perform daily challenge tasks and short URL clicks</li>
+          <li>Acquire Dutchy tokens to power your automated runs</li>
+          <li>Configure and launch the advanced multi-token faucet</li>
+          <li>Drip up to 50 unique crypto assets simultaneously</li>
+        </ul>
+      </div>
       <a href="https://autofaucet.dutchycorp.space/?r=Bitn1nja" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -370,7 +438,14 @@
         <div class="card-icon">🔄</div>
         <h3>AutoFaucet.org</h3>
       </div>
-      <p class="card-desc">A streamlined platform for passive earning. Collect tokens and activate the auto-claim to steadily gather BTC, LTC, or DOGE.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Complete streamlined PTC walls and promotional offers</li>
+          <li>Collect standard Free Claim Points (FCP) tokens</li>
+          <li>Initiate the automated browser-based multi-miner</li>
+          <li>Send processed earnings instantly straight to FaucetPay</li>
+        </ul>
+      </div>
       <a href="https://autofaucet.org/r/uncrownedx" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -381,7 +456,14 @@
         <div class="card-icon">📢</div>
         <h3>AdBTC</h3>
       </div>
-      <p class="card-desc">Visit sponsored websites for a few seconds to earn Bitcoin. One of the oldest and most reliable PTC sites on the web.</p>
+      <div class="card-desc">
+        <ul>
+          <li>Browse active marketing window frames for a few seconds</li>
+          <li>Earn liquid Bitcoin Satoshis per website visited</li>
+          <li>Utilize the hands-free autosurfing browser queues</li>
+          <li>Withdraw balances with extremely low micro-limits</li>
+        </ul>
+      </div>
       <a href="https://r.adbtc.top/3961131" class="card-link" target="_blank" rel="noopener">
         Start Earning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
